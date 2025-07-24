@@ -9,8 +9,8 @@
     "distance_type": "Medium",
     "distance": "2000 m",
     "fans": "3600",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_03.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_3005_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_03.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_3005_00.png"
   },
   {
     "name": "Carbuncle Stakes",
@@ -22,8 +22,8 @@
     "distance_type": "Short",
     "distance": "1200 m",
     "fans": "2300",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_02.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_4010_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_02.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_4010_00.png"
   },
   {
     "name": "January Stakes",
@@ -35,8 +35,8 @@
     "distance_type": "Short",
     "distance": "1200 m",
     "fans": "2200",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_02.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_4005_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_02.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_4005_00.png"
   },
   {
     "name": "Kyoto Kimpai",
@@ -48,8 +48,8 @@
     "distance_type": "Mile",
     "distance": "1600 m",
     "fans": "4100",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_03.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_3001_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_03.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_3001_00.png"
   },
   {
     "name": "Manyo Stakes",
@@ -61,8 +61,8 @@
     "distance_type": "Long",
     "distance": "3000 m",
     "fans": "2400",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_02.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_4001_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_02.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_4001_00.png"
   },
   {
     "name": "Nakayama Kimpai",
@@ -74,8 +74,8 @@
     "distance_type": "Medium",
     "distance": "2000 m",
     "fans": "4100",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_03.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_3002_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_03.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_3002_00.png"
   },
   {
     "name": "New Year Stakes",
@@ -87,8 +87,8 @@
     "distance_type": "Mile",
     "distance": "1600 m",
     "fans": "2500",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_02.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_4006_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_02.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_4006_00.png"
   },
   {
     "name": "Nikkei Shinshun Hai",
@@ -100,8 +100,8 @@
     "distance_type": "Medium",
     "distance": "2400 m",
     "fans": "5700",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_04.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_2001_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_04.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_2001_00.png"
   },
   {
     "name": "Pollux Stakes",
@@ -113,8 +113,8 @@
     "distance_type": "Mile",
     "distance": "1800 m",
     "fans": "2200",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_02.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_4004_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_02.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_4004_00.png"
   },
   {
     "name": "Yodo Tankyori Stakes",
@@ -126,8 +126,8 @@
     "distance_type": "Short",
     "distance": "1200 m",
     "fans": "2500",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_02.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_4003_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_02.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_4003_00.png"
   },
   {
     "name": "American JCC",
@@ -139,8 +139,8 @@
     "distance_type": "Medium",
     "distance": "2200 m",
     "fans": "6200",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_04.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_2003_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_04.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_2003_00.png"
   },
   {
     "name": "Negishi Stakes",
@@ -152,8 +152,8 @@
     "distance_type": "Short",
     "distance": "1400 m",
     "fans": "3800",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_03.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_3008_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_03.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_3008_00.png"
   },
   {
     "name": "Shirafuji Stakes",
@@ -165,8 +165,8 @@
     "distance_type": "Medium",
     "distance": "2000 m",
     "fans": "2600",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_02.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_4011_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_02.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_4011_00.png"
   },
   {
     "name": "Silk Road Stakes",
@@ -178,8 +178,8 @@
     "distance_type": "Short",
     "distance": "1200 m",
     "fans": "3900",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_03.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_3007_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_03.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_3007_00.png"
   },
   {
     "name": "Subaru Stakes",
@@ -191,8 +191,8 @@
     "distance_type": "Short",
     "distance": "1400 m",
     "fans": "2300",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_02.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_4008_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_02.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_4008_00.png"
   },
   {
     "name": "Tokai Stakes",
@@ -204,8 +204,8 @@
     "distance_type": "Mile",
     "distance": "1800 m",
     "fans": "5500",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_04.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_2002_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_04.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_2002_00.png"
   },
   {
     "name": "Aldebaran Stakes",
@@ -217,8 +217,8 @@
     "distance_type": "Medium",
     "distance": "1900 m",
     "fans": "2200",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_02.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_4016_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_02.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_4016_00.png"
   },
   {
     "name": "Kyoto Kinen",
@@ -230,8 +230,8 @@
     "distance_type": "Medium",
     "distance": "2200 m",
     "fans": "6200",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_04.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_2004_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_04.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_2004_00.png"
   },
   {
     "name": "Rakuyo Stakes",
@@ -243,8 +243,8 @@
     "distance_type": "Mile",
     "distance": "1600 m",
     "fans": "2500",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_02.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_4015_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_02.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_4015_00.png"
   },
   {
     "name": "Tokyo Shimbun Hai",
@@ -256,8 +256,8 @@
     "distance_type": "Mile",
     "distance": "1600 m",
     "fans": "3900",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_03.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_3010_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_03.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_3010_00.png"
   },
   {
     "name": "Valentine Stakes",
@@ -269,8 +269,8 @@
     "distance_type": "Short",
     "distance": "1400 m",
     "fans": "2200",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_02.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_4017_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_02.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_4017_00.png"
   },
   {
     "name": "Yamato Stakes",
@@ -282,8 +282,8 @@
     "distance_type": "Short",
     "distance": "1200 m",
     "fans": "2200",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_02.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_4013_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_02.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_4013_00.png"
   },
   {
     "name": "Diamond Stakes",
@@ -295,8 +295,8 @@
     "distance_type": "Long",
     "distance": "3400 m",
     "fans": "4100",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_03.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_3014_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_03.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_3014_00.png"
   },
   {
     "name": "February Stakes",
@@ -308,8 +308,8 @@
     "distance_type": "Mile",
     "distance": "1600 m",
     "fans": "10000",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_05.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_1001_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_05.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_1001_00.png"
   },
   {
     "name": "Hankyu Hai",
@@ -321,8 +321,8 @@
     "distance_type": "Short",
     "distance": "1400 m",
     "fans": "4100",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_03.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_3017_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_03.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_3017_00.png"
   },
   {
     "name": "Kitakyushu Tankyori Stakes",
@@ -334,8 +334,8 @@
     "distance_type": "Short",
     "distance": "1200 m",
     "fans": "2300",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_02.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_4117_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_02.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_4117_00.png"
   },
   {
     "name": "Kokura Daishoten",
@@ -347,8 +347,8 @@
     "distance_type": "Mile",
     "distance": "1800 m",
     "fans": "4100",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_03.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_3015_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_03.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_3015_00.png"
   },
   {
     "name": "Kyoto Umamusume Stakes",
@@ -360,8 +360,8 @@
     "distance_type": "Short",
     "distance": "1400 m",
     "fans": "3600",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_03.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_3013_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_03.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_3013_00.png"
   },
   {
     "name": "Nakayama Kinen",
@@ -373,8 +373,8 @@
     "distance_type": "Mile",
     "distance": "1800 m",
     "fans": "6700",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_04.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_2005_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_04.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_2005_00.png"
   },
   {
     "name": "Sobu Stakes",
@@ -386,8 +386,8 @@
     "distance_type": "Mile",
     "distance": "1800 m",
     "fans": "2200",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_02.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_4019_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_02.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_4019_00.png"
   },
   {
     "name": "Kinko Sho",
@@ -399,8 +399,8 @@
     "distance_type": "Medium",
     "distance": "2000 m",
     "fans": "6700",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_04.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_2007_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_04.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_2007_00.png"
   },
   {
     "name": "Kochi Stakes",
@@ -412,8 +412,8 @@
     "distance_type": "Mile",
     "distance": "1600 m",
     "fans": "2500",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_02.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_4026_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_02.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_4026_00.png"
   },
   {
     "name": "Nakayama Umamusume Stakes",
@@ -425,8 +425,8 @@
     "distance_type": "Mile",
     "distance": "1800 m",
     "fans": "3600",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_03.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_3020_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_03.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_3020_00.png"
   },
   {
     "name": "Nigawa Stakes",
@@ -438,8 +438,8 @@
     "distance_type": "Medium",
     "distance": "2000 m",
     "fans": "2300",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_02.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_4023_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_02.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_4023_00.png"
   },
   {
     "name": "Ocean Stakes",
@@ -451,8 +451,8 @@
     "distance_type": "Short",
     "distance": "1200 m",
     "fans": "4100",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_03.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_3019_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_03.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_3019_00.png"
   },
   {
     "name": "Osakajo Stakes",
@@ -464,8 +464,8 @@
     "distance_type": "Mile",
     "distance": "1800 m",
     "fans": "2600",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_02.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_4021_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_02.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_4021_00.png"
   },
   {
     "name": "Polaris Stakes",
@@ -477,8 +477,8 @@
     "distance_type": "Short",
     "distance": "1400 m",
     "fans": "2200",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_02.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_4022_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_02.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_4022_00.png"
   },
   {
     "name": "Chiba Stakes",
@@ -490,8 +490,8 @@
     "distance_type": "Short",
     "distance": "1200 m",
     "fans": "2200",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_02.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_4028_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_02.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_4028_00.png"
   },
   {
     "name": "Hanshin Daishoten",
@@ -503,8 +503,8 @@
     "distance_type": "Long",
     "distance": "3000 m",
     "fans": "6700",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_04.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_2009_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_04.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_2009_00.png"
   },
   {
     "name": "March Stakes",
@@ -516,8 +516,8 @@
     "distance_type": "Mile",
     "distance": "1800 m",
     "fans": "3600",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_03.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_3024_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_03.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_3024_00.png"
   },
   {
     "name": "Nikkei Sho",
@@ -529,8 +529,8 @@
     "distance_type": "Long",
     "distance": "2500 m",
     "fans": "6700",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_04.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_2011_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_04.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_2011_00.png"
   },
   {
     "name": "Osaka Hai",
@@ -542,8 +542,8 @@
     "distance_type": "Medium",
     "distance": "2000 m",
     "fans": "13500",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_05.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_1003_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_05.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_1003_00.png"
   },
   {
     "name": "Rokko Stakes",
@@ -555,8 +555,8 @@
     "distance_type": "Mile",
     "distance": "1600 m",
     "fans": "2500",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_02.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_4030_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_02.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_4030_00.png"
   },
   {
     "name": "Takamatsunomiya Kinen",
@@ -568,8 +568,8 @@
     "distance_type": "Short",
     "distance": "1200 m",
     "fans": "13000",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_05.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_1002_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_05.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_1002_00.png"
   },
   {
     "name": "Antares Stakes",
@@ -581,8 +581,8 @@
     "distance_type": "Mile",
     "distance": "1800 m",
     "fans": "3600",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_03.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_3026_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_03.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_3026_00.png"
   },
   {
     "name": "Azumakofuji Stakes",
@@ -594,8 +594,8 @@
     "distance_type": "Mile",
     "distance": "1700 m",
     "fans": "2200",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_02.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_4118_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_02.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_4118_00.png"
   },
   {
     "name": "Coral Stakes",
@@ -607,8 +607,8 @@
     "distance_type": "Short",
     "distance": "1400 m",
     "fans": "2300",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_02.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_4031_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_02.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_4031_00.png"
   },
   {
     "name": "Fukushima Mimpo Hai",
@@ -620,8 +620,8 @@
     "distance_type": "Medium",
     "distance": "2000 m",
     "fans": "2600",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_02.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_4038_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_02.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_4038_00.png"
   },
   {
     "name": "Hanshin Umamusume Stakes",
@@ -633,8 +633,8 @@
     "distance_type": "Mile",
     "distance": "1600 m",
     "fans": "5500",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_04.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_2012_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_04.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_2012_00.png"
   },
   {
     "name": "Keiyo Stakes",
@@ -646,8 +646,8 @@
     "distance_type": "Short",
     "distance": "1200 m",
     "fans": "2300",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_02.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_4036_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_02.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_4036_00.png"
   },
   {
     "name": "Lord Derby Challenge Trophy",
@@ -659,8 +659,8 @@
     "distance_type": "Mile",
     "distance": "1600 m",
     "fans": "3900",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_03.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_3025_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_03.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_3025_00.png"
   },
   {
     "name": "Shunrai Stakes",
@@ -672,8 +672,8 @@
     "distance_type": "Short",
     "distance": "1200 m",
     "fans": "2500",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_02.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_4037_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_02.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_4037_00.png"
   },
   {
     "name": "Fukushima Umamusume Stakes",
@@ -685,8 +685,8 @@
     "distance_type": "Mile",
     "distance": "1800 m",
     "fans": "3800",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_03.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_3027_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_03.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_3027_00.png"
   },
   {
     "name": "Milers Cup",
@@ -698,8 +698,8 @@
     "distance_type": "Mile",
     "distance": "1600 m",
     "fans": "5900",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_04.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_2014_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_04.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_2014_00.png"
   },
   {
     "name": "Oasis Stakes",
@@ -711,8 +711,8 @@
     "distance_type": "Mile",
     "distance": "1600 m",
     "fans": "2300",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_02.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_4040_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_02.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_4040_00.png"
   },
   {
     "name": "Tenno Sho (Spring)",
@@ -724,8 +724,8 @@
     "distance_type": "Long",
     "distance": "3200 m",
     "fans": "15000",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_05.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_1006_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_05.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_1006_00.png"
   },
   {
     "name": "Tennozan Stakes",
@@ -737,8 +737,8 @@
     "distance_type": "Short",
     "distance": "1200 m",
     "fans": "2200",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_02.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_4041_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_02.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_4041_00.png"
   },
   {
     "name": "Brilliant Stakes",
@@ -750,8 +750,8 @@
     "distance_type": "Medium",
     "distance": "2100 m",
     "fans": "2300",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_02.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_4048_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_02.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_4048_00.png"
   },
   {
     "name": "Keio Hai Spring Cup",
@@ -763,8 +763,8 @@
     "distance_type": "Short",
     "distance": "1400 m",
     "fans": "5900",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_04.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_2018_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_04.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_2018_00.png"
   },
   {
     "name": "Kurama Stakes",
@@ -776,8 +776,8 @@
     "distance_type": "Short",
     "distance": "1200 m",
     "fans": "2300",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_02.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_4047_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_02.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_4047_00.png"
   },
   {
     "name": "Metropolitan Stakes",
@@ -789,8 +789,8 @@
     "distance_type": "Medium",
     "distance": "2400 m",
     "fans": "2600",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_02.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_4046_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_02.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_4046_00.png"
   },
   {
     "name": "Miyakooji Stakes",
@@ -802,8 +802,8 @@
     "distance_type": "Mile",
     "distance": "1800 m",
     "fans": "2600",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_02.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_4049_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_02.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_4049_00.png"
   },
   {
     "name": "Niigata Daishoten",
@@ -815,8 +815,8 @@
     "distance_type": "Medium",
     "distance": "2000 m",
     "fans": "4100",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_03.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_3028_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_03.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_3028_00.png"
   },
   {
     "name": "Ritto Stakes",
@@ -828,8 +828,8 @@
     "distance_type": "Short",
     "distance": "1400 m",
     "fans": "2300",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_02.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_4051_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_02.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_4051_00.png"
   },
   {
     "name": "Tanigawadake Stakes",
@@ -841,8 +841,8 @@
     "distance_type": "Mile",
     "distance": "1600 m",
     "fans": "2500",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_02.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_4044_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_02.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_4044_00.png"
   },
   {
     "name": "Victoria Mile",
@@ -854,8 +854,8 @@
     "distance_type": "Mile",
     "distance": "1600 m",
     "fans": "10500",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_05.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_1008_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_05.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_1008_00.png"
   },
   {
     "name": "Azuchijo Stakes",
@@ -867,8 +867,8 @@
     "distance_type": "Short",
     "distance": "1400 m",
     "fans": "2500",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_02.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_4058_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_02.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_4058_00.png"
   },
   {
     "name": "Heian Stakes",
@@ -880,8 +880,8 @@
     "distance_type": "Medium",
     "distance": "1900 m",
     "fans": "3600",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_03.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_3029_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_03.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_3029_00.png"
   },
   {
     "name": "Idaten Stakes",
@@ -893,8 +893,8 @@
     "distance_type": "Short",
     "distance": "1000 m",
     "fans": "2300",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_02.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_4055_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_02.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_4055_00.png"
   },
   {
     "name": "Keyaki Stakes",
@@ -906,8 +906,8 @@
     "distance_type": "Short",
     "distance": "1400 m",
     "fans": "2200",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_02.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_4057_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_02.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_4057_00.png"
   },
   {
     "name": "May Stakes",
@@ -919,8 +919,8 @@
     "distance_type": "Mile",
     "distance": "1800 m",
     "fans": "2400",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_02.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_4053_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_02.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_4053_00.png"
   },
   {
     "name": "Meguro Kinen",
@@ -932,8 +932,8 @@
     "distance_type": "Long",
     "distance": "2500 m",
     "fans": "5700",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_04.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_2019_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_04.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_2019_00.png"
   },
   {
     "name": "Epsom Cup",
@@ -945,8 +945,8 @@
     "distance_type": "Mile",
     "distance": "1800 m",
     "fans": "4100",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_03.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_3032_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_03.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_3032_00.png"
   },
   {
     "name": "Mermaid Stakes",
@@ -958,8 +958,8 @@
     "distance_type": "Medium",
     "distance": "2000 m",
     "fans": "3600",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_03.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_3031_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_03.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_3031_00.png"
   },
   {
     "name": "Naruo Kinen",
@@ -971,8 +971,8 @@
     "distance_type": "Medium",
     "distance": "2000 m",
     "fans": "4100",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_03.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_3030_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_03.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_3030_00.png"
   },
   {
     "name": "Sleipnir Stakes",
@@ -984,8 +984,8 @@
     "distance_type": "Medium",
     "distance": "2100 m",
     "fans": "2200",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_02.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_4119_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_02.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_4119_00.png"
   },
   {
     "name": "Tempozan Stakes",
@@ -997,8 +997,8 @@
     "distance_type": "Short",
     "distance": "1400 m",
     "fans": "2200",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_02.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_4060_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_02.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_4060_00.png"
   },
   {
     "name": "Yasuda Kinen",
@@ -1010,8 +1010,8 @@
     "distance_type": "Mile",
     "distance": "1600 m",
     "fans": "13000",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_05.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_1011_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_05.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_1011_00.png"
   },
   {
     "name": "Akhalteke Stakes",
@@ -1023,8 +1023,8 @@
     "distance_type": "Mile",
     "distance": "1600 m",
     "fans": "2200",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_02.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_4059_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_02.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_4059_00.png"
   },
   {
     "name": "Hakodate Sprint Stakes",
@@ -1036,8 +1036,8 @@
     "distance_type": "Short",
     "distance": "1200 m",
     "fans": "3900",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_03.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_3034_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_03.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_3034_00.png"
   },
   {
     "name": "Onuma Stakes",
@@ -1049,8 +1049,8 @@
     "distance_type": "Mile",
     "distance": "1700 m",
     "fans": "2300",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_02.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_4062_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_02.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_4062_00.png"
   },
   {
     "name": "Paradise Stakes",
@@ -1062,8 +1062,8 @@
     "distance_type": "Short",
     "distance": "1400 m",
     "fans": "2500",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_02.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_4063_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_02.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_4063_00.png"
   },
   {
     "name": "Sannomiya Stakes",
@@ -1075,8 +1075,8 @@
     "distance_type": "Mile",
     "distance": "1800 m",
     "fans": "2200",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_02.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_4120_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_02.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_4120_00.png"
   },
   {
     "name": "Takarazuka Kinen",
@@ -1088,8 +1088,8 @@
     "distance_type": "Medium",
     "distance": "2200 m",
     "fans": "15000",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_05.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_1012_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_05.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_1012_00.png"
   },
   {
     "name": "Teio Sho",
@@ -1101,8 +1101,8 @@
     "distance_type": "Medium",
     "distance": "2000 m",
     "fans": "6000",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_05.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_1101_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_05.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_1101_00.png"
   },
   {
     "name": "Yonago Stakes",
@@ -1114,8 +1114,8 @@
     "distance_type": "Mile",
     "distance": "1600 m",
     "fans": "2500",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_02.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_4061_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_02.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_4061_00.png"
   },
   {
     "name": "CBC Sho",
@@ -1127,8 +1127,8 @@
     "distance_type": "Short",
     "distance": "1200 m",
     "fans": "3900",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_03.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_3035_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_03.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_3035_00.png"
   },
   {
     "name": "Hakodate Kinen",
@@ -1140,8 +1140,8 @@
     "distance_type": "Medium",
     "distance": "2000 m",
     "fans": "4100",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_03.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_3039_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_03.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_3039_00.png"
   },
   {
     "name": "Marine Stakes",
@@ -1153,8 +1153,8 @@
     "distance_type": "Mile",
     "distance": "1700 m",
     "fans": "2200",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_02.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_4065_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_02.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_4065_00.png"
   },
   {
     "name": "Meitetsu Hai",
@@ -1166,8 +1166,8 @@
     "distance_type": "Mile",
     "distance": "1800 m",
     "fans": "2300",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_02.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_4066_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_02.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_4066_00.png"
   },
   {
     "name": "Procyon Stakes",
@@ -1179,8 +1179,8 @@
     "distance_type": "Short",
     "distance": "1400 m",
     "fans": "3600",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_03.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_3037_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_03.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_3037_00.png"
   },
   {
     "name": "Tanabata Sho",
@@ -1192,8 +1192,8 @@
     "distance_type": "Medium",
     "distance": "2000 m",
     "fans": "4100",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_03.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_3038_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_03.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_3038_00.png"
   },
   {
     "name": "Tomoe Sho",
@@ -1205,8 +1205,8 @@
     "distance_type": "Mile",
     "distance": "1800 m",
     "fans": "2400",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_02.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_4064_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_02.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_4064_00.png"
   },
   {
     "name": "Chukyo Kinen",
@@ -1218,8 +1218,8 @@
     "distance_type": "Mile",
     "distance": "1600 m",
     "fans": "3900",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_03.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_3040_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_03.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_3040_00.png"
   },
   {
     "name": "Fukushima TV Open",
@@ -1231,8 +1231,8 @@
     "distance_type": "Short",
     "distance": "1200 m",
     "fans": "2300",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_02.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_4069_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_02.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_4069_00.png"
   },
   {
     "name": "Ibis Summer Dash",
@@ -1244,8 +1244,8 @@
     "distance_type": "Short",
     "distance": "1000 m",
     "fans": "3900",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_03.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_3042_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_03.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_3042_00.png"
   },
   {
     "name": "Queen Stakes",
@@ -1257,8 +1257,8 @@
     "distance_type": "Mile",
     "distance": "1800 m",
     "fans": "3600",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_03.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_3043_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_03.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_3043_00.png"
   },
   {
     "name": "Aso Stakes",
@@ -1270,8 +1270,8 @@
     "distance_type": "Mile",
     "distance": "1700 m",
     "fans": "2200",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_02.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_4073_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_02.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_4073_00.png"
   },
   {
     "name": "Elm Stakes",
@@ -1283,8 +1283,8 @@
     "distance_type": "Mile",
     "distance": "1700 m",
     "fans": "3600",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_03.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_3047_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_03.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_3047_00.png"
   },
   {
     "name": "Kanetsu Stakes",
@@ -1296,8 +1296,8 @@
     "distance_type": "Mile",
     "distance": "1800 m",
     "fans": "2400",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_02.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_4121_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_02.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_4121_00.png"
   },
   {
     "name": "Kokura Kinen",
@@ -1309,8 +1309,8 @@
     "distance_type": "Medium",
     "distance": "2000 m",
     "fans": "4100",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_03.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_3044_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_03.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_3044_00.png"
   },
   {
     "name": "Sapporo Nikkei Open",
@@ -1322,8 +1322,8 @@
     "distance_type": "Long",
     "distance": "2600 m",
     "fans": "2600",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_02.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_4071_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_02.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_4071_00.png"
   },
   {
     "name": "Sekiya Kinen",
@@ -1335,8 +1335,8 @@
     "distance_type": "Mile",
     "distance": "1600 m",
     "fans": "3900",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_03.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_3046_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_03.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_3046_00.png"
   },
   {
     "name": "UHB Sho",
@@ -1348,8 +1348,8 @@
     "distance_type": "Short",
     "distance": "1200 m",
     "fans": "2300",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_02.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_4072_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_02.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_4072_00.png"
   },
   {
     "name": "BSN Sho",
@@ -1361,8 +1361,8 @@
     "distance_type": "Mile",
     "distance": "1800 m",
     "fans": "2300",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_02.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_4079_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_02.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_4079_00.png"
   },
   {
     "name": "Keeneland Cup",
@@ -1374,8 +1374,8 @@
     "distance_type": "Short",
     "distance": "1200 m",
     "fans": "4100",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_03.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_3050_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_03.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_3050_00.png"
   },
   {
     "name": "Kitakyushu Kinen",
@@ -1387,8 +1387,8 @@
     "distance_type": "Short",
     "distance": "1200 m",
     "fans": "3900",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_03.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_3048_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_03.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_3048_00.png"
   },
   {
     "name": "Kokura Nikkei Open",
@@ -1400,8 +1400,8 @@
     "distance_type": "Mile",
     "distance": "1800 m",
     "fans": "2400",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_02.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_4080_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_02.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_4080_00.png"
   },
   {
     "name": "NST Sho",
@@ -1413,8 +1413,8 @@
     "distance_type": "Short",
     "distance": "1200 m",
     "fans": "2200",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_02.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_4076_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_02.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_4076_00.png"
   },
   {
     "name": "Sapporo Kinen",
@@ -1426,8 +1426,8 @@
     "distance_type": "Medium",
     "distance": "2000 m",
     "fans": "7000",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_04.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_2020_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_04.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_2020_00.png"
   },
   {
     "name": "Toki Stakes",
@@ -1439,8 +1439,8 @@
     "distance_type": "Short",
     "distance": "1400 m",
     "fans": "2500",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_02.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_4081_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_02.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_4081_00.png"
   },
   {
     "name": "Centaur Stakes",
@@ -1452,8 +1452,8 @@
     "distance_type": "Short",
     "distance": "1200 m",
     "fans": "5900",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_04.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_2021_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_04.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_2021_00.png"
   },
   {
     "name": "Enif Stakes",
@@ -1465,8 +1465,8 @@
     "distance_type": "Short",
     "distance": "1400 m",
     "fans": "2300",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_02.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_4084_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_02.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_4084_00.png"
   },
   {
     "name": "Keisei Hai Autumn Handicap",
@@ -1478,8 +1478,8 @@
     "distance_type": "Mile",
     "distance": "1600 m",
     "fans": "3900",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_03.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_3055_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_03.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_3055_00.png"
   },
   {
     "name": "Niigata Kinen",
@@ -1491,8 +1491,8 @@
     "distance_type": "Medium",
     "distance": "2000 m",
     "fans": "4100",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_03.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_3053_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_03.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_3053_00.png"
   },
   {
     "name": "Prix Foy",
@@ -1504,8 +1504,8 @@
     "distance_type": "Medium",
     "distance": "2400 m",
     "fans": "5000",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_04.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_17202_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_04.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_17202_00.png"
   },
   {
     "name": "Radio Nippon Sho",
@@ -1517,8 +1517,8 @@
     "distance_type": "Mile",
     "distance": "1800 m",
     "fans": "2200",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_02.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_4086_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_02.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_4086_00.png"
   },
   {
     "name": "Tancho Stakes",
@@ -1530,8 +1530,8 @@
     "distance_type": "Long",
     "distance": "2600 m",
     "fans": "2400",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_02.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_4082_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_02.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_4082_00.png"
   },
   {
     "name": "All Comers",
@@ -1543,8 +1543,8 @@
     "distance_type": "Medium",
     "distance": "2200 m",
     "fans": "6700",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_04.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_2025_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_04.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_2025_00.png"
   },
   {
     "name": "Nagatsuki Stakes",
@@ -1556,8 +1556,8 @@
     "distance_type": "Short",
     "distance": "1200 m",
     "fans": "2200",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_02.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_4122_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_02.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_4122_00.png"
   },
   {
     "name": "Port Island Stakes",
@@ -1569,8 +1569,8 @@
     "distance_type": "Mile",
     "distance": "1600 m",
     "fans": "2500",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_02.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_4090_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_02.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_4090_00.png"
   },
   {
     "name": "Sirius Stakes",
@@ -1582,8 +1582,8 @@
     "distance_type": "Medium",
     "distance": "2000 m",
     "fans": "3600",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_03.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_3056_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_03.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_3056_00.png"
   },
   {
     "name": "Sprinters Stakes",
@@ -1595,8 +1595,8 @@
     "distance_type": "Short",
     "distance": "1200 m",
     "fans": "13000",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_05.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_1013_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_05.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_1013_00.png"
   },
   {
     "name": "Fuchu Umamusume Stakes",
@@ -1608,8 +1608,8 @@
     "distance_type": "Mile",
     "distance": "1800 m",
     "fans": "5500",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_04.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_2028_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_04.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_2028_00.png"
   },
   {
     "name": "Green Channel Cup",
@@ -1621,8 +1621,8 @@
     "distance_type": "Short",
     "distance": "1400 m",
     "fans": "2300",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_02.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_4092_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_02.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_4092_00.png"
   },
   {
     "name": "Kyoto Daishoten",
@@ -1634,8 +1634,8 @@
     "distance_type": "Medium",
     "distance": "2400 m",
     "fans": "6700",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_04.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_2027_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_04.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_2027_00.png"
   },
   {
     "name": "Mainichi Okan",
@@ -1647,8 +1647,8 @@
     "distance_type": "Mile",
     "distance": "1800 m",
     "fans": "6700",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_04.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_2026_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_04.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_2026_00.png"
   },
   {
     "name": "October Stakes",
@@ -1660,8 +1660,8 @@
     "distance_type": "Medium",
     "distance": "2000 m",
     "fans": "2600",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_02.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_4094_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_02.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_4094_00.png"
   },
   {
     "name": "Opal Stakes",
@@ -1673,8 +1673,8 @@
     "distance_type": "Short",
     "distance": "1200 m",
     "fans": "2500",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_02.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_4091_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_02.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_4091_00.png"
   },
   {
     "name": "Shinetsu Stakes",
@@ -1686,8 +1686,8 @@
     "distance_type": "Short",
     "distance": "1400 m",
     "fans": "2500",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_02.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_4095_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_02.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_4095_00.png"
   },
   {
     "name": "Uzumasa Stakes",
@@ -1699,8 +1699,21 @@
     "distance_type": "Mile",
     "distance": "1800 m",
     "fans": "2200",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_02.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_4123_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_02.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_4123_00.png"
+  },
+  {
+    "name": "Tenno Sho (Autumn)",
+    "year": "Third Year",
+    "month": "October",
+    "day": "2",
+    "surface": "Turf",
+    "location": "Tokyo",
+    "distance_type": "Medium",
+    "distance": "2000 m",
+    "fans": "15000",
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_05.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_1016_00.png"
   },
   {
     "name": "Copa Republica Argentina",
@@ -1712,8 +1725,8 @@
     "distance_type": "Long",
     "distance": "2500 m",
     "fans": "5700",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_04.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_2031_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_04.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_2031_00.png"
   },
   {
     "name": "Fukushima Kinen",
@@ -1725,8 +1738,8 @@
     "distance_type": "Medium",
     "distance": "2000 m",
     "fans": "4100",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_03.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_3063_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_03.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_3063_00.png"
   },
   {
     "name": "JBC Classic",
@@ -1738,8 +1751,8 @@
     "distance_type": "Medium",
     "distance": "2000 m",
     "fans": "8000",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_05.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_1105_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_05.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_1105_00.png"
   },
   {
     "name": "JBC Ladies’ Classic",
@@ -1751,8 +1764,8 @@
     "distance_type": "Mile",
     "distance": "1800 m",
     "fans": "4100",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_05.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_1103_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_05.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_1103_00.png"
   },
   {
     "name": "JBC Sprint",
@@ -1764,8 +1777,8 @@
     "distance_type": "Short",
     "distance": "1200 m",
     "fans": "6000",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_05.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_1104_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_05.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_1104_00.png"
   },
   {
     "name": "Miyako Stakes",
@@ -1777,8 +1790,8 @@
     "distance_type": "Mile",
     "distance": "1800 m",
     "fans": "3800",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_03.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_3061_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_03.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_3061_00.png"
   },
   {
     "name": "Musashino Stakes",
@@ -1790,8 +1803,8 @@
     "distance_type": "Mile",
     "distance": "1600 m",
     "fans": "3800",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_03.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_3062_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_03.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_3062_00.png"
   },
   {
     "name": "Oro Cup",
@@ -1803,8 +1816,8 @@
     "distance_type": "Short",
     "distance": "1400 m",
     "fans": "2500",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_02.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_4102_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_02.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_4102_00.png"
   },
   {
     "name": "Queen Elizabeth II Cup",
@@ -1816,8 +1829,8 @@
     "distance_type": "Medium",
     "distance": "2200 m",
     "fans": "10500",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_05.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_1017_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_05.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_1017_00.png"
   },
   {
     "name": "Andromeda Stakes",
@@ -1829,8 +1842,8 @@
     "distance_type": "Medium",
     "distance": "2000 m",
     "fans": "2600",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_02.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_4104_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_02.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_4104_00.png"
   },
   {
     "name": "Autumn Leaf Stakes",
@@ -1842,8 +1855,8 @@
     "distance_type": "Short",
     "distance": "1200 m",
     "fans": "2200",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_02.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_4108_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_02.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_4108_00.png"
   },
   {
     "name": "Capital Stakes",
@@ -1855,8 +1868,8 @@
     "distance_type": "Mile",
     "distance": "1600 m",
     "fans": "2500",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_02.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_4107_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_02.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_4107_00.png"
   },
   {
     "name": "Fukushima Minyu Cup",
@@ -1868,8 +1881,8 @@
     "distance_type": "Mile",
     "distance": "1700 m",
     "fans": "2300",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_02.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_4106_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_02.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_4106_00.png"
   },
   {
     "name": "Japan Cup",
@@ -1881,8 +1894,8 @@
     "distance_type": "Medium",
     "distance": "2400 m",
     "fans": "30000",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_05.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_1019_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_05.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_1019_00.png"
   },
   {
     "name": "Keihan Hai",
@@ -1894,8 +1907,8 @@
     "distance_type": "Short",
     "distance": "1200 m",
     "fans": "3900",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_03.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_3066_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_03.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_3066_00.png"
   },
   {
     "name": "Mile Championship",
@@ -1907,8 +1920,8 @@
     "distance_type": "Mile",
     "distance": "1600 m",
     "fans": "11000",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_05.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_1018_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_05.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_1018_00.png"
   },
   {
     "name": "Shimotsuki Stakes",
@@ -1920,8 +1933,8 @@
     "distance_type": "Short",
     "distance": "1400 m",
     "fans": "2200",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_02.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_4105_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_02.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_4105_00.png"
   },
   {
     "name": "Capella Stakes",
@@ -1933,8 +1946,8 @@
     "distance_type": "Short",
     "distance": "1200 m",
     "fans": "3600",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_03.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_3069_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_03.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_3069_00.png"
   },
   {
     "name": "Challenge Cup",
@@ -1946,8 +1959,8 @@
     "distance_type": "Medium",
     "distance": "2000 m",
     "fans": "4100",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_03.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_3067_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_03.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_3067_00.png"
   },
   {
     "name": "Champions Cup",
@@ -1959,8 +1972,8 @@
     "distance_type": "Mile",
     "distance": "1800 m",
     "fans": "10000",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_05.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_1020_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_05.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_1020_00.png"
   },
   {
     "name": "Chunichi Shimbun Hai",
@@ -1972,8 +1985,8 @@
     "distance_type": "Medium",
     "distance": "2000 m",
     "fans": "4100",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_03.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_3068_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_03.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_3068_00.png"
   },
   {
     "name": "December Stakes",
@@ -1985,8 +1998,8 @@
     "distance_type": "Mile",
     "distance": "1800 m",
     "fans": "2600",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_02.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_4113_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_02.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_4113_00.png"
   },
   {
     "name": "Lapis Lazuli Stakes",
@@ -1998,8 +2011,8 @@
     "distance_type": "Short",
     "distance": "1200 m",
     "fans": "2500",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_02.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_4109_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_02.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_4109_00.png"
   },
   {
     "name": "Rigel Stakes",
@@ -2011,8 +2024,8 @@
     "distance_type": "Mile",
     "distance": "1600 m",
     "fans": "2500",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_02.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_4111_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_02.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_4111_00.png"
   },
   {
     "name": "Shiwasu Stakes",
@@ -2024,8 +2037,8 @@
     "distance_type": "Mile",
     "distance": "1800 m",
     "fans": "2300",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_02.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_4110_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_02.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_4110_00.png"
   },
   {
     "name": "Stayers Stakes",
@@ -2037,8 +2050,8 @@
     "distance_type": "Long",
     "distance": "3600 m",
     "fans": "6200",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_04.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_2033_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_04.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_2033_00.png"
   },
   {
     "name": "Tanzanite Stakes",
@@ -2050,8 +2063,8 @@
     "distance_type": "Short",
     "distance": "1200 m",
     "fans": "2300",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_02.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_4112_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_02.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_4112_00.png"
   },
   {
     "name": "Turquoise Stakes",
@@ -2063,7 +2076,20 @@
     "distance_type": "Mile",
     "distance": "1600 m",
     "fans": "3600",
-    "grade_image": "assets/grade_ribbons\\utx_txt_grade_ribbon_03.png",
-    "race_banner": "assets/race_banners\\thum_race_rt_000_3070_00.png"
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_03.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_3070_00.png"
+  },
+  {
+    "name": "Arima Kinen",
+    "year": "Third Year",
+    "month": "December",
+    "day": "2",
+    "surface": "Turf",
+    "location": "Nakayama",
+    "distance_type": "Long",
+    "distance": "2500 m",
+    "fans": "30000",
+    "grade_image": "assets/grade_ribbons/utx_txt_grade_ribbon_05.png",
+    "race_banner": "assets/race_banners/thum_race_rt_000_1023_00.png"
   }
 ]

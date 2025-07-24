@@ -1,6 +1,338 @@
-/* Tùy chỉnh đẹp cho lịch, ví dụ grid, màu hover, pop-up, ... */
-#calendar-container { display: flex; flex-direction: column; }
-.month-row { display: flex; margin-bottom: 12px; }
-.month-cell { border: 1px solid #ccc; flex: 1; margin: 2px; padding: 4px; display: flex; flex-direction: column; }
-.day-box { border-top: 1px solid #ddd; padding: 2px; cursor: pointer; }
-.day-box:hover { background: #eef; }
+/* Reset box-sizing */
+* {
+  box-sizing: border-box;
+}
+
+/* BODY và font tổng thể */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f3f7fb;
+  margin: 0;
+  padding: 20px;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Tiêu đề chính */
+h1 {
+  margin-bottom: 20px;
+  color: #2c3e50;
+  text-shadow: 1px 1px 2px #a1a1a1;
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+/* Phần chọn năm */
+#year-select {
+  margin-bottom: 25px;
+  display: flex;
+  gap: 15px;
+}
+
+#year-select label {
+  cursor: pointer;
+  user-select: none;
+  position: relative;
+  padding-left: 30px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #34495e;
+  transition: color 0.3s;
+}
+
+#year-select label:hover {
+  color: #1abc9c;
+}
+
+/* Ẩn checkbox mặc định */
+#year-select input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Thiết kế toggle checkbox */
+#year-select input[type="checkbox"] + label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 22px;
+  height: 22px;
+  border: 2px solid #1abc9c;
+  border-radius: 5px;
+  background: white;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+#year-select input[type="checkbox"]:checked + label::before {
+  background-color: #1abc9c;
+  border-color: #16a085;
+}
+
+/* Dấu tick khi checked */
+#year-select input[type="checkbox"]:checked + label::after {
+  content: "✔";
+  position: absolute;
+  left: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* Container lịch */
+#calendar-container {
+  width: 100%;
+  max-width: 1100px;
+}
+
+/* Mỗi năm một khối */
+.year-block {
+  margin-bottom: 40px;
+  background: white;
+  border-radius: 12px;
+  padding: 15px 20px 25px;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 0.1);
+}
+
+/* Tiêu đề năm */
+.year-block h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #27ae60;
+  border-bottom: 2px solid #27ae60;
+  padding-bottom: 6px;
+  font-weight: 700;
+}
+
+/* Hàng tháng */
+.month-row {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 14px;
+}
+
+/* Ô tháng */
+.month-cell {
+  background: #ecf0f1;
+  border-radius: 8px;
+  box-shadow: inset 0 0 4px rgb(0 0 0 / 0.1);
+  padding: 12px 8px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+/* Tên tháng */
+.month-name {
+  font-weight: 700;
+  color: #2c3e50;
+  font-size: 1.1rem;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* Ô ngày nhỏ (day-box) */
+.day-box {
+  background: white;
+  border: 2px solid transparent;
+  border-radius: 6px;
+  padding: 10px 5px;
+  margin-bottom: 8px;
+  text-align: center;
+  font-weight: 600;
+  color: #34495e;
+  cursor: pointer;
+  transition: border-color 0.25s, background-color 0.25s, color 0.25s;
+  user-select: none;
+  box-shadow: 0 1px 3px rgb(0 0 0 / 0.1);
+  min-height: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Hover hiệu ứng */
+.day-box:hover {
+  border-color: #1abc9c;
+  background-color: #d1f0e7;
+  color: #16a085;
+}
+
+/* Ô có cuộc đua */
+.day-box.has-race {
+  border-color: #2980b9;
+  box-shadow: 0 0 8px #2980b9aa;
+}
+
+/* Ô được chọn */
+.day-box.selected-day {
+  background-color: #1abc9c;
+  color: white;
+  border-color: #16a085;
+  box-shadow: 0 0 12px #16a085aa;
+  font-weight: 700;
+}
+
+/* Ảnh banner nhỏ trong day-box */
+.day-box img {
+  margin: 0 auto 4px;
+  border-radius: 4px;
+}
+
+/* Nút tải ảnh */
+#download-btn {
+  background-color: #27ae60;
+  border: none;
+  border-radius: 30px;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 12px 30px;
+  font-size: 1.2rem;
+  box-shadow: 0 4px 10px rgb(39 174 96 / 0.5);
+  transition: background-color 0.3s, box-shadow 0.3s;
+  margin-bottom: 30px;
+  align-self: center;
+}
+
+#download-btn:hover {
+  background-color: #2ecc71;
+  box-shadow: 0 6px 14px rgb(46 204 113 / 0.7);
+}
+
+/* Modal popup nền */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background: rgba(0, 0, 0, 0.45);
+  display: none; /* Hiện khi JS bật */
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+/* Nội dung popup */
+.modal-content {
+  background: white;
+  border-radius: 12px;
+  max-width: 480px;
+  width: 90vw;
+  max-height: 75vh;
+  overflow-y: auto;
+  padding: 25px 30px 30px;
+  box-shadow: 0 8px 20px rgb(0 0 0 / 0.3);
+}
+
+/* Tiêu đề popup */
+.modal-content h3 {
+  color: #2980b9;
+  margin-bottom: 18px;
+  font-weight: 700;
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+/* Danh sách cuộc đua */
+.race-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px;
+}
+
+/* Mỗi item cuộc đua */
+.race-item {
+  padding: 12px 14px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  background: #f7f9fa;
+  color: #2c3e50;
+  box-shadow: 0 0 6px rgb(0 0 0 / 0.05);
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+/* Highlight khi được chọn */
+.race-item.selected {
+  background-color: #27ae60;
+  color: white;
+  font-weight: 700;
+  box-shadow: 0 0 8px #27ae60cc;
+}
+
+/* Hover hiệu ứng */
+.race-item:hover:not(.selected) {
+  background-color: #d4ecdd;
+  color: #1a5e3a;
+}
+
+/* Ảnh banner trong popup */
+.race-banner {
+  width: 80px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+  flex-shrink: 0;
+}
+
+/* Ảnh grade Ribbon */
+.race-item img[alt="Grade Ribbon"] {
+  width: 24px;
+  height: 24px;
+  margin-right: 4px;
+  border-radius: 4px;
+}
+
+/* Nút đóng modal */
+.modal-content button {
+  background-color: #e74c3c;
+  border: none;
+  padding: 10px 24px;
+  color: white;
+  font-weight: 700;
+  border-radius: 30px;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  font-size: 1rem;
+  box-shadow: 0 3px 6px rgb(231 76 60 / 0.7);
+  transition: background-color 0.3s;
+}
+
+.modal-content button:hover {
+  background-color: #c0392b;
+}
+
+/* Responsive đơn giản */
+@media (max-width: 768px) {
+  .month-row {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .month-row {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  #year-select {
+    flex-direction: column;
+    gap: 10px;
+  }
+  #download-btn {
+    width: 100%;
+  }
+}
