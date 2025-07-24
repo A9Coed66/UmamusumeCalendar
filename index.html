@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <title>Lịch cuộc đua</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Lịch cuộc đua</h1>
+
+  <!-- Phần chọn năm -->
+  <div id="year-select">
+    <label><input type="checkbox" checked value="First Year" />Năm 1</label>
+    <label><input type="checkbox" checked value="Second Year" />Năm 2</label>
+    <label><input type="checkbox" checked value="Third Year" />Năm 3</label>
+  </div>
+
+  <!-- Container chứa lịch calendar -->
+  <div id="calendar-container"></div>
+
+  <!-- Nút tải ảnh lịch -->
+  <button id="download-btn">Tải ảnh lịch</button>
+
+  <!-- Script chính -->
+  <script src="script.js"></script>
+
+  <!-- Thư viện html2canvas để tải ảnh -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</body>
+</html>

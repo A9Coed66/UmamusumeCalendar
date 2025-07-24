@@ -1,0 +1,6 @@
+/* Tùy chỉnh đẹp cho lịch, ví dụ grid, màu hover, pop-up, ... */
+#calendar-container { display: flex; flex-direction: column; }
+.month-row { display: flex; margin-bottom: 12px; }
+.month-cell { border: 1px solid #ccc; flex: 1; margin: 2px; padding: 4px; display: flex; flex-direction: column; }
+.day-box { border-top: 1px solid #ddd; padding: 2px; cursor: pointer; }
+.day-box:hover { background: #eef; }
