@@ -31,6 +31,13 @@ function processRacesForYear(races, yearLabel) {
 }
 
 function showRaceSelectionPopup(year, month, dayStage, races) {
+  // Sắp xếp các cuộc đua theo số lượng fan giảm dần
+  races.sort((a, b) => {
+    const fansA = parseInt(a.fans?.replace(/[^0-9]/g, "") || "0", 10);
+    const fansB = parseInt(b.fans?.replace(/[^0-9]/g, "") || "0", 10);
+    return fansB - fansA; // Sắp xếp giảm dần
+  });
+
   const modal = document.getElementById("race-popup") || document.createElement("div");
   modal.id = "race-popup";
   modal.classList.add("modal-overlay");
@@ -69,7 +76,7 @@ function showRaceSelectionPopup(year, month, dayStage, races) {
           Surface: ${race.surface || "-"}<br>
           Distance type: <span class="distance-type ${distanceTypeClass}">${race.distance_type || "-"}</span><br>
           Distance: ${race.distance || "-"}<br>
-          Fans: ${race.fans || "-"}<br>
+          Fans: ${race.fans || "-"}</br>
         </div>
       </div>
     `;
