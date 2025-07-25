@@ -30,15 +30,11 @@ function processRacesForYear(races, yearLabel) {
   });
 }
 
-// Hiển thị popup chọn cuộc đua với race_banner & grade_image
 function showRaceSelectionPopup(year, month, dayStage, races) {
-  let modal = document.getElementById("race-popup");
-  if (!modal) {
-    modal = document.createElement("div");
-    modal.id = "race-popup";
-    modal.classList.add("modal-overlay");
-    document.body.appendChild(modal);
-  }
+  const modal = document.getElementById("race-popup") || document.createElement("div");
+  modal.id = "race-popup";
+  modal.classList.add("modal-overlay");
+  document.body.appendChild(modal);
   modal.innerHTML = "";
 
   const popup = document.createElement("div");
@@ -48,40 +44,32 @@ function showRaceSelectionPopup(year, month, dayStage, races) {
   title.textContent = `Race on ${month} - Day ${dayStage} (${year})`;
   popup.appendChild(title);
 
-  // Danh sách các cuộc đua
   const list = document.createElement("ul");
   list.classList.add("race-list");
 
   races.forEach((race, idx) => {
     const item = document.createElement("li");
     item.classList.add("race-item");
-    const isSelected = selections[year]?.[month]?.[dayStage] === idx;
-    if (isSelected) item.classList.add("selected");
 
-    // Hiển thị grade_image (dạng mảng hoặc string)
-    let gradeRibbonsHTML = "";
-    if (race.grade_image) {
-      if (Array.isArray(race.grade_image)) {
-        gradeRibbonsHTML = race.grade_image.map(src =>
-          `<img src="${src}" alt="Grade Ribbon" style="width:48px; height:24px; margin-right:4px;">`
-        ).join('');
-      } else {
-        gradeRibbonsHTML = `<img src="${race.grade_image}" alt="Grade Ribbon" style="width:48px; height:24px;">`;
-      }
-    }
+    // Xác định lớp CSS cho distance_type
+    const distanceTypeClass = {
+      Short: "distance-type-short",
+      Mile: "distance-type-mile",
+      Medium: "distance-type-medium",
+      Long: "distance-type-long",
+    }[race.distance_type] || "";
 
     // Nội dung hiển thị
     item.innerHTML = `
       <div style="display:flex; align-items:center; gap:10px;">
-        ${race.race_banner ? `<img src="${race.race_banner}" alt="Race race_banner" class="race-race_banner">` : ""}
+        ${race.race_banner ? `<img src="${race.race_banner}" alt="Race Banner" class="race-race_banner">` : ""}
         <div>
           <strong>${race.name || "Chưa đặt tên"}</strong><br>
           Location: ${race.location || "-"}<br>
           Surface: ${race.surface || "-"}<br>
-          Distance type: ${race.distance_type || "-"}<br>
+          Distance type: <span class="distance-type ${distanceTypeClass}">${race.distance_type || "-"}</span><br>
           Distance: ${race.distance || "-"}<br>
           Fans: ${race.fans || "-"}<br>
-          ${gradeRibbonsHTML}
         </div>
       </div>
     `;

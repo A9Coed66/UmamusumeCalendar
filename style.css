@@ -283,6 +283,36 @@ h1 {
   background-color: #c0392b;
 }
 
+/* Kiểu dáng cho distance_type */
+.distance-type {
+  font-weight: bold;
+  padding: 2px 6px;
+  border-radius: 4px;
+  display: inline-block;
+  margin-top: 4px;
+}
+
+/* Màu sắc cho từng loại distance_type */
+.distance-type-short {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.distance-type-mile {
+  background-color: #d1ecf1;
+  color: #0c5460;
+}
+
+.distance-type-medium {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.distance-type-long {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
 /* Responsive đơn giản */
 @media (max-width: 768px) {
   .month-row {
