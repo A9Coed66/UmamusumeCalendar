@@ -47,28 +47,6 @@ h1 {
   color: #1abc9c;
 }
 
-/* Ẩn checkbox mặc định */
-#year-select input[type="checkbox"] {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-}
-
-/* Thiết kế toggle checkbox */
-#year-select input[type="checkbox"] + label::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 22px;
-  height: 22px;
-  border: 2px solid #1abc9c;
-  border-radius: 5px;
-  background: white;
-  transition: background-color 0.3s, border-color 0.3s;
-}
-
 #year-select input[type="checkbox"]:checked + label::before {
   background-color: #1abc9c;
   border-color: #16a085;
@@ -92,30 +70,11 @@ h1 {
   max-width: 1100px;
 }
 
-/* Mỗi năm một khối */
-.year-block {
-  margin-bottom: 40px;
-  background: white;
-  border-radius: 12px;
-  padding: 15px 20px 25px;
-  box-shadow: 0 2px 8px rgb(0 0 0 / 0.1);
-}
-
-/* Tiêu đề năm */
-.year-block h2 {
-  font-size: 1.8rem;
-  margin-bottom: 20px;
-  color: #27ae60;
-  border-bottom: 2px solid #27ae60;
-  padding-bottom: 6px;
-  font-weight: 700;
-}
-
 /* Hàng tháng */
 .month-row {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  gap: 14px;
+  gap: 16px;
 }
 
 /* Ô tháng */
@@ -123,10 +82,11 @@ h1 {
   background: #ecf0f1;
   border-radius: 8px;
   box-shadow: inset 0 0 4px rgb(0 0 0 / 0.1);
-  padding: 12px 8px 10px;
+  padding: 16px 8px 10px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  margin: 10px;
 }
 
 /* Tên tháng */
@@ -143,7 +103,7 @@ h1 {
   background: white;
   border: 2px solid transparent;
   border-radius: 6px;
-  padding: 10px 5px;
+  padding: 0px 0px;
   margin-bottom: 8px;
   text-align: center;
   font-weight: 600;
@@ -152,11 +112,14 @@ h1 {
   transition: border-color 0.25s, background-color 0.25s, color 0.25s;
   user-select: none;
   box-shadow: 0 1px 3px rgb(0 0 0 / 0.1);
-  min-height: 60px;
+  min-width: 135px;
+  min-height: 120px;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
+
+
 
 /* Hover hiệu ứng */
 .day-box:hover {
@@ -182,8 +145,12 @@ h1 {
 
 /* Ảnh banner nhỏ trong day-box */
 .day-box img {
-  margin: 0 auto 4px;
-  border-radius: 4px;
+  max-width: 90%; /* Tăng kích thước tối đa của ảnh */
+  max-height: 80px; /* Tăng chiều cao tối đa của ảnh */
+  object-fit: contain; /* Đảm bảo ảnh không bị méo */
+  border-radius: 6px;
+  margin: 0 auto 8px; /* Căn giữa ảnh và thêm khoảng cách bên dưới */
+  display: block;
 }
 
 /* Nút tải ảnh */
@@ -319,7 +286,7 @@ h1 {
 /* Responsive đơn giản */
 @media (max-width: 768px) {
   .month-row {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(20, 1fr);
     gap: 10px;
   }
 }

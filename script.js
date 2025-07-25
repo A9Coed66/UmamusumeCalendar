@@ -30,7 +30,7 @@ function processRacesForYear(races, yearLabel) {
   });
 }
 
-// Hiển thị popup chọn cuộc đua với banner & grade_ribbons
+// Hiển thị popup chọn cuộc đua với race_banner & grade_image
 function showRaceSelectionPopup(year, month, dayStage, races) {
   let modal = document.getElementById("race-popup");
   if (!modal) {
@@ -45,7 +45,7 @@ function showRaceSelectionPopup(year, month, dayStage, races) {
   popup.classList.add("modal-content");
 
   const title = document.createElement("h3");
-  title.textContent = `Cuộc đua ${month} - Day ${dayStage} (${year})`;
+  title.textContent = `Race on ${month} - Day ${dayStage} (${year})`;
   popup.appendChild(title);
 
   // Danh sách các cuộc đua
@@ -58,28 +58,29 @@ function showRaceSelectionPopup(year, month, dayStage, races) {
     const isSelected = selections[year]?.[month]?.[dayStage] === idx;
     if (isSelected) item.classList.add("selected");
 
-    // Hiển thị grade_ribbons (dạng mảng hoặc string)
+    // Hiển thị grade_image (dạng mảng hoặc string)
     let gradeRibbonsHTML = "";
-    if (race.grade_ribbons) {
-      if (Array.isArray(race.grade_ribbons)) {
-        gradeRibbonsHTML = race.grade_ribbons.map(src =>
-          `<img src="${src}" alt="Grade Ribbon" style="width:24px; height:24px; margin-right:4px;">`
+    if (race.grade_image) {
+      if (Array.isArray(race.grade_image)) {
+        gradeRibbonsHTML = race.grade_image.map(src =>
+          `<img src="${src}" alt="Grade Ribbon" style="width:48px; height:24px; margin-right:4px;">`
         ).join('');
       } else {
-        gradeRibbonsHTML = `<img src="${race.grade_ribbons}" alt="Grade Ribbon" style="width:24px; height:24px;">`;
+        gradeRibbonsHTML = `<img src="${race.grade_image}" alt="Grade Ribbon" style="width:48px; height:24px;">`;
       }
     }
 
     // Nội dung hiển thị
     item.innerHTML = `
       <div style="display:flex; align-items:center; gap:10px;">
-        ${race.banner ? `<img src="${race.banner}" alt="Race Banner" class="race-banner">` : ""}
+        ${race.race_banner ? `<img src="${race.race_banner}" alt="Race race_banner" class="race-race_banner">` : ""}
         <div>
           <strong>${race.name || "Chưa đặt tên"}</strong><br>
-          Địa điểm: ${race.location || "-"}<br>
-          Loại đường đua: ${race.trackType || "-"}<br>
-          Cự ly: ${race.distance || "-"}<br>
-          Số fan: ${race.fans || "-"}<br>
+          Location: ${race.location || "-"}<br>
+          Surface: ${race.surface || "-"}<br>
+          Distance type: ${race.distance_type || "-"}<br>
+          Distance: ${race.distance || "-"}<br>
+          Fans: ${race.fans || "-"}<br>
           ${gradeRibbonsHTML}
         </div>
       </div>
@@ -119,10 +120,97 @@ function onDayBoxClick(event) {
 
   const races = calendar[year][month][dayStage];
   if (!races || races.length === 0) {
-    alert("Không có cuộc đua trong ngày này.");
+    alert("No any race on today.");
     return;
   }
   showRaceSelectionPopup(year, month, dayStage, races);
+}
+
+// Tạo tiêu đề năm
+function createYearTitle(year) {
+  const title = document.createElement("h2");
+  title.textContent = year;
+  title.style.textAlign = "center"; // Canh giữa tiêu đề
+  return title;
+}
+
+function createDayBox(year, month, dayStage) {
+  const dayBox = document.createElement("div");
+  dayBox.classList.add("day-box");
+  dayBox.dataset.year = year;
+  dayBox.dataset.month = month;
+  dayBox.dataset.dayStage = dayStage;
+
+  const selIdx = selections[year]?.[month]?.[dayStage];
+  const selectedRace = selIdx !== undefined
+    ? calendar[year][month][dayStage][selIdx]
+    : undefined;
+
+  if (selectedRace) {
+    dayBox.innerHTML = selectedRace.race_banner
+      ? `<img src="${selectedRace.race_banner}" alt="Race race_banner" style="width:100px;height:50px;object-fit:cover;border-radius:4px;display:block;margin:0 auto 5px;">`
+      : "";
+    dayBox.innerHTML += `<div style="font-size:0.9rem;color:#fff;text-align:center;font-weight:bold;">Fan: ${selectedRace.fans || "?"}</div>`;
+    dayBox.classList.add("selected-day");
+    dayBox.title = `Đã chọn: ${selectedRace.name || "-"}`;
+
+    const deleteBtn = document.createElement("button");
+    deleteBtn.textContent = "✖"; // Sử dụng biểu tượng thay vì chữ "Remove"
+    deleteBtn.style.margin = "0 auto"; // Căn giữa nút theo chiều ngang
+    deleteBtn.style.padding = "2px 6px"; // Giảm padding để nút nhỏ hơn
+    deleteBtn.style.fontSize = "0.7rem"; // Giảm kích thước chữ
+    deleteBtn.style.cursor = "pointer";
+    deleteBtn.style.backgroundColor = "#e74c3c";
+    deleteBtn.style.color = "#fff";
+    deleteBtn.style.border = "none";
+    deleteBtn.style.borderRadius = "50%"; // Làm nút tròn
+    deleteBtn.style.width = "20px"; // Đặt chiều rộng cố định
+    deleteBtn.style.height = "20px"; // Đặt chiều cao cố định
+    deleteBtn.style.display = "block"; // Đảm bảo nút là một khối riêng biệt
+    deleteBtn.style.position = "relative"; // Đặt vị trí tương đối để căn chỉnh
+    deleteBtn.style.top = "5px"; // Điều chỉnh khoảng cách từ trên xuống
+
+    deleteBtn.addEventListener("click", (e) => {
+      e.stopPropagation(); // Ngăn chặn sự kiện click vào ô ngày
+      delete selections[year][month][dayStage]; // Xóa cuộc đua đã chọn
+      renderCalendar(); // Cập nhật lại lịch
+    });
+
+    dayBox.appendChild(deleteBtn);
+  } else {
+    dayBox.textContent = `Day ${dayStage}`;
+    dayBox.style.fontSize = "1rem";
+    dayBox.style.textAlign = "center";
+    dayBox.style.padding = "10px";
+    dayBox.style.backgroundColor = "#f0f0f0";
+    dayBox.style.borderRadius = "6px";
+  }
+
+  if (calendar[year][month][dayStage].length > 0) {
+    dayBox.classList.add("has-race");
+  }
+
+  dayBox.addEventListener("click", onDayBoxClick);
+  return dayBox;
+}
+
+// Tạo ô tháng
+function createMonthCell(year, month) {
+  const monthCell = document.createElement("div");
+  monthCell.classList.add("month-cell");
+  monthCell.dataset.month = month;
+
+  const monthName = document.createElement("div");
+  monthName.classList.add("month-name");
+  monthName.textContent = month;
+  monthCell.appendChild(monthName);
+
+  for (let dayStage = 1; dayStage <= 2; dayStage++) {
+    const dayBox = createDayBox(year, month, dayStage);
+    monthCell.appendChild(dayBox);
+  }
+
+  return monthCell;
 }
 
 // Render ô lịch cho từng năm
@@ -131,8 +219,7 @@ function renderYear(year) {
   yearDiv.classList.add("year-block");
   yearDiv.dataset.year = year;
 
-  const title = document.createElement("h2");
-  title.textContent = year;
+  const title = createYearTitle(year);
   yearDiv.appendChild(title);
 
   for (let row = 0; row < 2; row++) {
@@ -141,63 +228,53 @@ function renderYear(year) {
 
     for (let i = row * 6; i < row * 6 + 6; i++) {
       const month = MONTHS[i];
-      const monthCell = document.createElement("div");
-      monthCell.classList.add("month-cell");
-      monthCell.dataset.month = month;
-
-      const monthName = document.createElement("div");
-      monthName.classList.add("month-name");
-      monthName.textContent = month;
-      monthCell.appendChild(monthName);
-
-      for (let dayStage = 1; dayStage <= 2; dayStage++) {
-        const dayBox = document.createElement("div");
-        dayBox.classList.add("day-box");
-        dayBox.dataset.year = year;
-        dayBox.dataset.month = month;
-        dayBox.dataset.dayStage = dayStage;
-
-        // Nếu đã chọn cuộc đua cho ngày này
-        const selIdx = selections[year]?.[month]?.[dayStage];
-        const selectedRace = selIdx !== undefined
-          ? calendar[year][month][dayStage][selIdx]
-          : undefined;
-
-        if (selectedRace) {
-          // Hiển thị ảnh banner nhỏ
-          dayBox.innerHTML = selectedRace.banner
-            ? `<img src="${selectedRace.banner}" alt="Race Banner" style="width:40px;height:25px;object-fit:cover;border-radius:4px;display:block;margin:0 auto 3px;">`
-            : "";
-          // Hiển thị số fan
-          dayBox.innerHTML += `<div style="font-size:0.8rem;color:#fff;text-align:center">Fan: ${selectedRace.fans || "?"}</div>`;
-        } else {
-          dayBox.textContent = `Day ${dayStage}`;
-        }
-
-        // Nếu có cuộc đua thì làm nổi bật
-        if (calendar[year][month][dayStage].length > 0) {
-          dayBox.classList.add("has-race");
-        }
-        // Nếu đã chọn thì highlight
-        if (selectedRace) {
-          dayBox.classList.add("selected-day");
-          dayBox.title = `Đã chọn: ${selectedRace.name || "-"}`;
-        }
-
-        dayBox.addEventListener("click", onDayBoxClick);
-        monthCell.appendChild(dayBox);
-      }
+      const monthCell = createMonthCell(year, month);
       rowDiv.appendChild(monthCell);
     }
+
     yearDiv.appendChild(rowDiv);
   }
+
   return yearDiv;
 }
 
-// Tính tổng số fan đã chọn từ lịch
-function getTotalFans(selectedYears) {
+let currentYearIndex = 0; // Chỉ số năm hiện tại trong mảng YEARS
+
+// Cập nhật hàm renderCalendar để chỉ hiển thị năm hiện tại
+function renderCalendar() {
+  const container = document.getElementById("calendar-container");
+  container.innerHTML = "";
+
+  const year = YEARS[currentYearIndex];
+  const yearDOM = renderYear(year);
+  container.appendChild(yearDOM);
+
+  // Cập nhật tổng số fan đã chọn
+  updateTotalFans(getTotalFans([year]));
+}
+
+function setupYearNavigationButtons() {
+  const prevYearBtn = document.getElementById("prev-year-btn");
+  const nextYearBtn = document.getElementById("next-year-btn");
+
+  prevYearBtn.addEventListener("click", () => {
+    if (currentYearIndex > 0) {
+      currentYearIndex--; // Chuyển sang năm trước
+      renderCalendar(); // Render lại lịch
+    }
+  });
+
+  nextYearBtn.addEventListener("click", () => {
+    if (currentYearIndex < YEARS.length - 1) {
+      currentYearIndex++; // Chuyển sang năm tiếp theo
+      renderCalendar(); // Render lại lịch
+    }
+  });
+}
+
+function getTotalFans() {
   let totalFans = 0;
-  for (const year of selectedYears) {
+  for (const year of YEARS) {
     for (const month of MONTHS) {
       for (const dayStage of [1, 2]) {
         const selIdx = selections[year]?.[month]?.[dayStage];
@@ -233,30 +310,38 @@ function updateTotalFans(totalFanCount) {
     const calendarContainer = document.getElementById("calendar-container");
     calendarContainer.parentNode.insertBefore(totalFansDiv, calendarContainer);
   }
-  totalFansDiv.textContent = `Tổng số fan đã chọn: ${totalFanCount.toLocaleString()}`;
+  totalFansDiv.textContent = `${totalFanCount.toLocaleString()} fans total`;
 }
 
-// Render toàn bộ calendar
 function renderCalendar() {
   const container = document.getElementById("calendar-container");
-  container.innerHTML = "";
-
-  const checkedYears = Array.from(document.querySelectorAll("#year-select input[type=checkbox]:checked"))
-    .map(cb => cb.value);
-
-  if (checkedYears.length === 0) {
-    container.textContent = "Vui lòng chọn ít nhất một năm để hiển thị lịch.";
-    updateTotalFans(0);
-    return;
+  const currentYear = YEARS[currentYearIndex];
+  
+  // Tìm và loại bỏ các lớp hiệu ứng cũ
+  const oldYearBlock = container.querySelector(".year-block");
+  if (oldYearBlock) {
+    oldYearBlock.classList.add(currentYearIndex > oldYearBlock.dataset.index ? "exit-left" : "exit-right");
+    oldYearBlock.remove(); // Xóa phần tử sau khi hiệu ứng kết thúc
   }
 
-  checkedYears.forEach(year => {
-    const yearDOM = renderYear(year);
-    container.appendChild(yearDOM);
-  });
+  // Tạo và thêm năm mới với hiệu ứng
+  const yearDOM = renderYear(currentYear);
+  yearDOM.dataset.index = currentYearIndex;
 
+  // Thêm lớp hiệu ứng trượt vào
+  yearDOM.classList.add("year-block");
+  yearDOM.classList.add(currentYearIndex > (oldYearBlock?.dataset.index || 0) ? "enter-right" : "enter-left");
+
+  // Đợi một chút để kích hoạt hiệu ứng "active"
+  setTimeout(() => {
+    yearDOM.classList.add("active");
+    yearDOM.classList.remove("enter-left", "enter-right");
+  }, 50);
+
+  container.appendChild(yearDOM);
+  
   // Cập nhật tổng số fan đã chọn
-  updateTotalFans(getTotalFans(checkedYears));
+  updateTotalFans(getTotalFans());
 }
 
 // Nút tải ảnh lịch
@@ -282,9 +367,8 @@ function setupDownloadButton() {
   });
 }
 
-// Hàm chính chạy khi DOM loaded
 function main() {
-  initCalendar();
+  initCalendar(); // Khởi tạo dữ liệu lịch
 
   Promise.all([
     fetch('first_year.json').then(res => {
@@ -303,18 +387,12 @@ function main() {
     processRacesForYear(firstYearData, "First Year");
     processRacesForYear(secondYearData, "Second Year");
     processRacesForYear(thirdYearData, "Third Year");
-    renderCalendar();
+    renderCalendar(); // Hiển thị lịch cho năm đầu tiên
   }).catch(err => {
     alert("Lỗi khi tải dữ liệu các năm: " + err.message);
   });
 
-  // Bắt sự kiện chọn năm lại
-  const yearCheckboxes = document.querySelectorAll("#year-select input[type=checkbox]");
-  yearCheckboxes.forEach(cb => {
-    cb.addEventListener("change", renderCalendar);
-  });
-
-  setupDownloadButton();
+  setupYearNavigationButtons(); // Thiết lập sự kiện cho nút điều hướng
 }
 
 document.addEventListener("DOMContentLoaded", main);

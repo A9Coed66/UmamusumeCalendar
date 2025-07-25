@@ -7,23 +7,22 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>Lịch cuộc đua</h1>
-
-  <!-- Phần chọn năm -->
-  <div id="year-select">
-    <label><input type="checkbox" checked value="First Year" />Năm 1</label>
-    <label><input type="checkbox" checked value="Second Year" />Năm 2</label>
-    <label><input type="checkbox" checked value="Third Year" />Năm 3</label>
-  </div>
+  <h1>Race Scheduler</h1>
+  <!-- Biểu tượng GitHub -->
+  <a href="https://github.com/A9Coed66/UmamusumeCalendar" target="_blank" id="github-link" title="View on GitHub">
+    <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub" style="width: 32px; height: 32px;">
+  </a>
 
   <!-- Container chứa lịch calendar -->
-  <div id="calendar-container"></div>
+  <div id="calendar-wrapper" style="display: flex; align-items: center; justify-content: center; gap: 20px;">
+    <button id="prev-year-btn">Previous Year</button>
+    <div id="calendar-container"></div>
+    <button id="next-year-btn">Next Year</button>
+  </div>
 
   <!-- Tổng số fan được chọn -->
   <div id="total-fans" style="margin: 12px 0; font-weight: 700; font-size: 1.15rem; color: #27ae60;"></div>
 
-  <!-- Nút tải ảnh lịch -->
-  <button id="download-btn">Tải ảnh lịch</button>
 
   <!-- Script chính -->
   <script src="script.js"></script>
