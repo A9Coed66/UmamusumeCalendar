@@ -9,7 +9,7 @@ const MONTHS = [
 let calendar = {};
 let selections = {};
 
-// Khởi tạo calendar rỗng
+// Initialize an empty calendar
 function initCalendar() {
   YEARS.forEach(year => {
     calendar[year] = {};
@@ -19,7 +19,7 @@ function initCalendar() {
   });
 }
 
-// Xử lý dữ liệu races cho từng năm
+// Process race data for each year
 function processRacesForYear(races, yearLabel) {
   races.forEach(race => {
     const month = race.month;
@@ -31,17 +31,38 @@ function processRacesForYear(races, yearLabel) {
 }
 
 function showRaceSelectionPopup(year, month, dayStage, races) {
-  // Sắp xếp các cuộc đua theo số lượng fan giảm dần
-  races.sort((a, b) => {
+  // Get checked distance types from checkboxes
+  const checkedTypes = Array.from(document.querySelectorAll('.distance-type-filter:checked'))
+    .map(cb => cb.value);
+
+  // Get checked grade filters from checkboxes
+  const checkedGrades = Array.from(document.querySelectorAll('.grade-filter:checked'))
+    .map(cb => cb.value);
+
+  // Filter races by checked distance types if any are checked
+  let filteredRaces = races;
+  if (checkedTypes.length >= 0) {
+    filteredRaces = races.filter(race => checkedTypes.includes(race.distance_type));
+  }
+
+  // Filter races by checked grades if any are checked
+  if (checkedGrades.length >= 0) {
+    filteredRaces = filteredRaces.filter(race => checkedGrades.includes(race.grade_image))
+  }
+
+  filteredRaces.sort((a, b) => {
     const fansA = parseInt(a.fans?.replace(/[^0-9]/g, "") || "0", 10);
     const fansB = parseInt(b.fans?.replace(/[^0-9]/g, "") || "0", 10);
-    return fansB - fansA; // Sắp xếp giảm dần
+    return fansB - fansA; // Sort in descending order
   });
 
-  const modal = document.getElementById("race-popup") || document.createElement("div");
-  modal.id = "race-popup";
-  modal.classList.add("modal-overlay");
-  document.body.appendChild(modal);
+  let modal = document.getElementById("race-popup");
+  if (!modal) {
+    modal = document.createElement("div");
+    modal.id = "race-popup";
+    modal.classList.add("modal-overlay");
+    document.body.appendChild(modal);
+  }
   modal.innerHTML = "";
 
   const popup = document.createElement("div");
@@ -51,62 +72,104 @@ function showRaceSelectionPopup(year, month, dayStage, races) {
   title.textContent = `Race on ${month} - Day ${dayStage} (${year})`;
   popup.appendChild(title);
 
+  // Add filter info if filters are active
+  if (checkedTypes.length > 0) {
+    const filterInfo = document.createElement("div");
+    filterInfo.style.fontSize = "0.95em";
+    filterInfo.style.marginBottom = "8px";
+    filterInfo.style.color = "#888";
+    filterInfo.textContent = `Filtered by: ${checkedTypes.join(", ")}`;
+    popup.appendChild(filterInfo);
+  }
+
   const list = document.createElement("ul");
   list.classList.add("race-list");
 
-  races.forEach((race, idx) => {
-    const item = document.createElement("li");
-    item.classList.add("race-item");
+  if (filteredRaces.length === 0) {
+    const noItem = document.createElement("li");
+    noItem.textContent = "No races match the selected type(s).";
+    noItem.style.color = "#c00";
+    list.appendChild(noItem);
+  } else {
+    filteredRaces.forEach((race, idx) => {
+      const item = document.createElement("li");
+      item.classList.add("race-item");
 
-    // Xác định lớp CSS cho distance_type
-    const distanceTypeClass = {
-      Short: "distance-type-short",
-      Mile: "distance-type-mile",
-      Medium: "distance-type-medium",
-      Long: "distance-type-long",
-    }[race.distance_type] || "";
+      const distanceTypeClass = {
+        Short: "distance-type-short",
+        Mile: "distance-type-mile",
+        Medium: "distance-type-medium",
+        Long: "distance-type-long",
+      }[race.distance_type] || "";
 
-    // Nội dung hiển thị
-    item.innerHTML = `
-      <div style="display:flex; align-items:center; gap:10px;">
-        ${race.race_banner ? `<img src="${race.race_banner}" alt="Race Banner" class="race-race_banner">` : ""}
-        <div>
-          <strong>${race.name || "Chưa đặt tên"}</strong><br>
-          Location: ${race.location || "-"}<br>
-          Surface: ${race.surface || "-"}<br>
-          Distance type: <span class="distance-type ${distanceTypeClass}">${race.distance_type || "-"}</span><br>
-          Distance: ${race.distance || "-"}<br>
-          Fans: ${race.fans || "-"}</br>
+      item.innerHTML = `
+        <div style="display:flex; align-items:center; gap:10px;">
+          <div>
+            ${race.race_banner ? `<img src="${race.race_banner}" alt="Race Banner" class="race-race_banner">` : ""} <br>
+            ${race.grade_image ? `<img src="${race.grade_image}" alt="Race Grade" class="race-race_grade" style="height:24px; width:auto; object-fit:contain;">` : ""}
+          </div>
+          <div>
+            <strong>${race.name || "Unnamed"}</strong><br>
+            Location: ${race.location || "-"}<br>
+            Surface: ${race.surface || "-"}<br>
+            Distance type: <span class="distance-type ${distanceTypeClass}">${race.distance_type || "-"}</span><br>
+            Distance: ${race.distance || "-"}<br>
+            Fans: ${race.fans || "-"}</br>
+          </div>
         </div>
-      </div>
-    `;
+      `;
 
-    item.style.cursor = "pointer";
-    item.addEventListener("click", () => {
-      if (!selections[year]) selections[year] = {};
-      if (!selections[year][month]) selections[year][month] = {};
-      selections[year][month][dayStage] = idx;
-      modal.style.display = "none";
-      renderCalendar();
+      item.style.cursor = "pointer";
+      // Find the original index in the races array for selection
+      const originalIdx = races.indexOf(race);
+      item.addEventListener("click", () => {
+        if (!selections[year]) selections[year] = {};
+        if (!selections[year][month]) selections[year][month] = {};
+        selections[year][month][dayStage] = originalIdx;
+        modal.style.display = "none";
+        removeListeners();
+        renderCalendar();
+      });
+
+      list.appendChild(item);
     });
-
-    list.appendChild(item);
-  });
+  }
 
   popup.appendChild(list);
 
   const closeBtn = document.createElement("button");
-  closeBtn.textContent = "Đóng";
+  closeBtn.textContent = "Close";
   closeBtn.addEventListener("click", () => {
     modal.style.display = "none";
+    removeListeners();
   });
   popup.appendChild(closeBtn);
 
   modal.appendChild(popup);
   modal.style.display = "flex";
+
+  // --- Add click outside and ESC close logic ---
+  function onOverlayClick(e) {
+    if (e.target === modal) {
+      modal.style.display = "none";
+      removeListeners();
+    }
+  }
+  function onEsc(e) {
+    if (e.key === "Escape") {
+      modal.style.display = "none";
+      removeListeners();
+    }
+  }
+  function removeListeners() {
+    modal.removeEventListener("click", onOverlayClick);
+    document.removeEventListener("keydown", onEsc);
+  }
+  modal.addEventListener("click", onOverlayClick);
+  document.addEventListener("keydown", onEsc);
 }
 
-// Khi click ô ngày
+// When clicking on a day box
 function onDayBoxClick(event) {
   const target = event.currentTarget;
   const year = target.dataset.year;
@@ -115,17 +178,17 @@ function onDayBoxClick(event) {
 
   const races = calendar[year][month][dayStage];
   if (!races || races.length === 0) {
-    alert("No any race on today.");
+    alert("No races today.");
     return;
   }
   showRaceSelectionPopup(year, month, dayStage, races);
 }
 
-// Tạo tiêu đề năm
+// Create year title
 function createYearTitle(year) {
   const title = document.createElement("h2");
   title.textContent = year;
-  title.style.textAlign = "center"; // Canh giữa tiêu đề
+  title.style.textAlign = "center"; // Center the title
   return title;
 }
 
@@ -147,28 +210,28 @@ function createDayBox(year, month, dayStage) {
       : "";
     dayBox.innerHTML += `<div style="font-size:0.9rem;color:#fff;text-align:center;font-weight:bold;">Fan: ${selectedRace.fans || "?"}</div>`;
     dayBox.classList.add("selected-day");
-    dayBox.title = `Đã chọn: ${selectedRace.name || "-"}`;
+    dayBox.title = `Selected: ${selectedRace.name || "-"}`;
 
     const deleteBtn = document.createElement("button");
-    deleteBtn.textContent = "✖"; // Sử dụng biểu tượng thay vì chữ "Remove"
-    deleteBtn.style.margin = "0 auto"; // Căn giữa nút theo chiều ngang
-    deleteBtn.style.padding = "2px 6px"; // Giảm padding để nút nhỏ hơn
-    deleteBtn.style.fontSize = "0.7rem"; // Giảm kích thước chữ
+    deleteBtn.textContent = "✖"; // Use icon instead of "Remove"
+    deleteBtn.style.margin = "0 auto"; // Center the button horizontally
+    deleteBtn.style.padding = "2px 6px"; // Reduce padding for a smaller button
+    deleteBtn.style.fontSize = "0.7rem"; // Reduce font size
     deleteBtn.style.cursor = "pointer";
     deleteBtn.style.backgroundColor = "#e74c3c";
     deleteBtn.style.color = "#fff";
     deleteBtn.style.border = "none";
-    deleteBtn.style.borderRadius = "50%"; // Làm nút tròn
-    deleteBtn.style.width = "20px"; // Đặt chiều rộng cố định
-    deleteBtn.style.height = "20px"; // Đặt chiều cao cố định
-    deleteBtn.style.display = "block"; // Đảm bảo nút là một khối riêng biệt
-    deleteBtn.style.position = "relative"; // Đặt vị trí tương đối để căn chỉnh
-    deleteBtn.style.top = "5px"; // Điều chỉnh khoảng cách từ trên xuống
+    deleteBtn.style.borderRadius = "50%"; // Make the button round
+    deleteBtn.style.width = "20px"; // Set fixed width
+    deleteBtn.style.height = "20px"; // Set fixed height
+    deleteBtn.style.display = "block"; // Ensure the button is a separate block
+    deleteBtn.style.position = "relative"; // Set relative position for alignment
+    deleteBtn.style.top = "5px"; // Adjust top margin
 
     deleteBtn.addEventListener("click", (e) => {
-      e.stopPropagation(); // Ngăn chặn sự kiện click vào ô ngày
-      delete selections[year][month][dayStage]; // Xóa cuộc đua đã chọn
-      renderCalendar(); // Cập nhật lại lịch
+      e.stopPropagation(); // Prevent click event on the day box
+      delete selections[year][month][dayStage]; // Remove the selected race
+      renderCalendar(); // Update the calendar
     });
 
     dayBox.appendChild(deleteBtn);
@@ -189,7 +252,7 @@ function createDayBox(year, month, dayStage) {
   return dayBox;
 }
 
-// Tạo ô tháng
+// Create month cell
 function createMonthCell(year, month) {
   const monthCell = document.createElement("div");
   monthCell.classList.add("month-cell");
@@ -208,7 +271,7 @@ function createMonthCell(year, month) {
   return monthCell;
 }
 
-// Render ô lịch cho từng năm
+// Render calendar for each year
 function renderYear(year) {
   const yearDiv = document.createElement("div");
   yearDiv.classList.add("year-block");
@@ -233,9 +296,9 @@ function renderYear(year) {
   return yearDiv;
 }
 
-let currentYearIndex = 0; // Chỉ số năm hiện tại trong mảng YEARS
+let currentYearIndex = 0; // Current year index in the YEARS array
 
-// Cập nhật hàm renderCalendar để chỉ hiển thị năm hiện tại
+// Update renderCalendar to display only the current year
 function renderCalendar() {
   const container = document.getElementById("calendar-container");
   container.innerHTML = "";
@@ -244,7 +307,7 @@ function renderCalendar() {
   const yearDOM = renderYear(year);
   container.appendChild(yearDOM);
 
-  // Cập nhật tổng số fan đã chọn
+  // Update total selected fans
   updateTotalFans(getTotalFans([year]));
 }
 
@@ -254,15 +317,15 @@ function setupYearNavigationButtons() {
 
   prevYearBtn.addEventListener("click", () => {
     if (currentYearIndex > 0) {
-      currentYearIndex--; // Chuyển sang năm trước
-      renderCalendar(); // Render lại lịch
+      currentYearIndex--; // Switch to the previous year
+      renderCalendar(); // Re-render the calendar
     }
   });
 
   nextYearBtn.addEventListener("click", () => {
     if (currentYearIndex < YEARS.length - 1) {
-      currentYearIndex++; // Chuyển sang năm tiếp theo
-      renderCalendar(); // Render lại lịch
+      currentYearIndex++; // Switch to the next year
+      renderCalendar(); // Re-render the calendar
     }
   });
 }
@@ -292,7 +355,7 @@ function getTotalFans() {
   return totalFans;
 }
 
-// Hiển thị tổng số fan
+// Display total fans
 function updateTotalFans(totalFanCount) {
   let totalFansDiv = document.getElementById("total-fans");
   if (!totalFansDiv) {
@@ -312,22 +375,22 @@ function renderCalendar() {
   const container = document.getElementById("calendar-container");
   const currentYear = YEARS[currentYearIndex];
   
-  // Tìm và loại bỏ các lớp hiệu ứng cũ
+  // Find and remove old effect classes
   const oldYearBlock = container.querySelector(".year-block");
   if (oldYearBlock) {
     oldYearBlock.classList.add(currentYearIndex > oldYearBlock.dataset.index ? "exit-left" : "exit-right");
-    oldYearBlock.remove(); // Xóa phần tử sau khi hiệu ứng kết thúc
+    oldYearBlock.remove(); // Remove the element after the effect ends
   }
 
-  // Tạo và thêm năm mới với hiệu ứng
+  // Create and add the new year with effects
   const yearDOM = renderYear(currentYear);
   yearDOM.dataset.index = currentYearIndex;
 
-  // Thêm lớp hiệu ứng trượt vào
+  // Add sliding effect classes
   yearDOM.classList.add("year-block");
   yearDOM.classList.add(currentYearIndex > (oldYearBlock?.dataset.index || 0) ? "enter-right" : "enter-left");
 
-  // Đợi một chút để kích hoạt hiệu ứng "active"
+  // Wait a bit to trigger the "active" effect
   setTimeout(() => {
     yearDOM.classList.add("active");
     yearDOM.classList.remove("enter-left", "enter-right");
@@ -335,11 +398,11 @@ function renderCalendar() {
 
   container.appendChild(yearDOM);
   
-  // Cập nhật tổng số fan đã chọn
+  // Update total selected fans
   updateTotalFans(getTotalFans());
 }
 
-// Nút tải ảnh lịch
+// Calendar image download button
 function setupDownloadButton() {
   const button = document.getElementById("download-btn");
   if (!button) return;
@@ -347,7 +410,7 @@ function setupDownloadButton() {
   button.addEventListener("click", () => {
     const container = document.getElementById("calendar-container");
     if (!container) {
-      alert("Không tìm thấy lịch để tải ảnh.");
+      alert("Cannot find the calendar to download.");
       return;
     }
 
@@ -357,37 +420,37 @@ function setupDownloadButton() {
       link.href = canvas.toDataURL("image/png");
       link.click();
     }).catch(err => {
-      alert("Lỗi khi tải ảnh lịch: " + err.message);
+      alert("Error downloading calendar image: " + err.message);
     });
   });
 }
 
 function main() {
-  initCalendar(); // Khởi tạo dữ liệu lịch
+  initCalendar(); // Initialize calendar data
 
   Promise.all([
     fetch('first_year.json').then(res => {
-      if (!res.ok) throw new Error("Không tải được first_year.json");
+      if (!res.ok) throw new Error("Failed to load first_year.json");
       return res.json();
     }),
     fetch('second_year.json').then(res => {
-      if (!res.ok) throw new Error("Không tải được second_year.json");
+      if (!res.ok) throw new Error("Failed to load second_year.json");
       return res.json();
     }),
     fetch('third_year.json').then(res => {
-      if (!res.ok) throw new Error("Không tải được third_year.json");
+      if (!res.ok) throw new Error("Failed to load third_year.json");
       return res.json();
     })
   ]).then(([firstYearData, secondYearData, thirdYearData]) => {
     processRacesForYear(firstYearData, "First Year");
     processRacesForYear(secondYearData, "Second Year");
     processRacesForYear(thirdYearData, "Third Year");
-    renderCalendar(); // Hiển thị lịch cho năm đầu tiên
+    renderCalendar(); // Display the calendar for the first year
   }).catch(err => {
-    alert("Lỗi khi tải dữ liệu các năm: " + err.message);
+    alert("Error loading year data: " + err.message);
   });
 
-  setupYearNavigationButtons(); // Thiết lập sự kiện cho nút điều hướng
+  setupYearNavigationButtons(); // Set up navigation button events
 }
 
 document.addEventListener("DOMContentLoaded", main);

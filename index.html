@@ -3,31 +3,50 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Lịch cuộc đua</title>
+  <title>Umamucume Race Scheduler</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <h1>Race Scheduler</h1>
-  <!-- Biểu tượng GitHub -->
+  <!-- My github repo -->
   <a href="https://github.com/A9Coed66/UmamusumeCalendar" target="_blank" id="github-link" title="View on GitHub">
     <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub" style="width: 32px; height: 32px;">
   </a>
 
-  <!-- Container chứa lịch calendar -->
+
+  <!-- Bộ lọc kiểu chạy và giải chạy -->
+  <div id="race-filters" style="margin-bottom: 18px; display: flex; flex-direction: column; gap: 8px;">
+    <div>
+      <strong>Distance type:</strong>
+      <label><input type="checkbox" class="distance-type-filter" value="Short" checked> Short</label>
+      <label><input type="checkbox" class="distance-type-filter" value="Mile" checked> Mile</label>
+      <label><input type="checkbox" class="distance-type-filter" value="Medium" checked> Medium</label>
+      <label><input type="checkbox" class="distance-type-filter" value="Long" checked> Long</label>
+    </div>
+    <div>
+      <strong>Grade:</strong>
+      <label><input type="checkbox" class="grade-filter" value="assets/grade_ribbons/utx_txt_grade_ribbon_02.png" checked> Pre-OP</label>
+      <label><input type="checkbox" class="grade-filter" value="assets/grade_ribbons/utx_txt_grade_ribbon_06.png" checked> OP</label>
+      <label><input type="checkbox" class="grade-filter" value="assets/grade_ribbons/utx_txt_grade_ribbon_03.png" checked> Grade 3</label>
+      <label><input type="checkbox" class="grade-filter" value="assets/grade_ribbons/utx_txt_grade_ribbon_04.png" checked> Grade 2</label>
+      <label><input type="checkbox" class="grade-filter" value="assets/grade_ribbons/utx_txt_grade_ribbon_05.png" checked> Grade 1</label>
+    </div>
+  </div>
+  <!-- Calendar ontainer -->
   <div id="calendar-wrapper" style="display: flex; align-items: center; justify-content: center; gap: 20px;">
     <button id="prev-year-btn">Previous Year</button>
     <div id="calendar-container"></div>
     <button id="next-year-btn">Next Year</button>
   </div>
 
-  <!-- Tổng số fan được chọn -->
+  <!-- Total fan  -->
   <div id="total-fans" style="margin: 12px 0; font-weight: 700; font-size: 1.15rem; color: #27ae60;"></div>
 
 
-  <!-- Script chính -->
+  <!-- Script main -->
   <script src="script.js"></script>
 
-  <!-- Thư viện html2canvas để tải ảnh -->
+  <!-- Library html2 for image download  -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
 </body>
 </html>
